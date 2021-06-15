@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using UnityEngine.UI; 
 
 public class mainLogic : MonoBehaviour
 {
@@ -269,7 +269,7 @@ public class mainLogic : MonoBehaviour
     a = (b%10).ToString()+a;
     a = Mathf.FloorToInt(1f+Random.value*8.999f).ToString()+a;
     dHolder.surveyUrl = a;
-    gameObject.GetComponent<showSurveyLink>().fireSurveyLinkScript(int.Parse(a));
+    //gameObject.GetComponent<showSurveyLink>().fireSurveyLinkScript(int.Parse(a)); //Data collection & raffle concluded
   }
 
   public void returnToStart(){
